@@ -9,3 +9,13 @@ def combinations(n1, n2, max_len):
         for z in x:
             final.append(z)
     return final
+
+
+def all_indexes(arr, symbol):
+    indexes = []
+    i = 0
+    while i != len(arr):
+        if arr[i] == symbol:
+            indexes.append(i)
+        i += 1
+    return indexes
