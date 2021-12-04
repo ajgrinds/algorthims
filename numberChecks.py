@@ -1,4 +1,5 @@
-def is_prime(limit):
+def get_primes(limit):
+    """Gets a list of all primes below limit"""
     limitn = limit+1
     not_prime = [False] * limitn
     primes = []
@@ -11,4 +12,8 @@ def is_prime(limit):
 
         primes.append(i)
 
-    return limit in primes
+    return primes
+
+def is_prime(num):
+    """Checks if a number is prime or not"""
+    return num in get_primes(num)
